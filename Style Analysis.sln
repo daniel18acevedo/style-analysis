@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleAnalysis", "StyleAnalysis\StyleAnalysis.csproj", "{A59FF882-FFFD-4F2E-8223-7D2E6A7845EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StyleAnalysis", "StyleAnalysis\StyleAnalysis.csproj", "{A59FF882-FFFD-4F2E-8223-7D2E6A7845EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleAnalysis.Test", "StyleAnalysis.Test\StyleAnalysis.Test.csproj", "{8DE7C0C8-BA9D-419D-B28B-711CA336E0A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A59FF882-FFFD-4F2E-8223-7D2E6A7845EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59FF882-FFFD-4F2E-8223-7D2E6A7845EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59FF882-FFFD-4F2E-8223-7D2E6A7845EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE7C0C8-BA9D-419D-B28B-711CA336E0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE7C0C8-BA9D-419D-B28B-711CA336E0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE7C0C8-BA9D-419D-B28B-711CA336E0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE7C0C8-BA9D-419D-B28B-711CA336E0A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

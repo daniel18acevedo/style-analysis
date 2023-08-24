@@ -1,0 +1,16 @@
+<Project>
+  <ItemGroup>
+    <PackageReference 
+    Include="StyleCop.Analyzers" 
+    Version="1.1.118" 
+    PrivateAssets="all"
+    Condition="$(MSBuildProjectExtension) == '.csproj'" />
+  </ItemGroup>
+
+  <PropertyGroup>
+   <!-- Specify additional StyleCop settings -->
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>All</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
