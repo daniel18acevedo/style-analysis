@@ -34,9 +34,3 @@ jobs:
 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-  
-  analaye:
-    name: analyze
-    runs-on: ubuntu-latest
-    strategy:
-      
