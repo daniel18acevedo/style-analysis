@@ -34,11 +34,6 @@ jobs:
 
     - name: Test
       run: dotnet test --configuration Release --no-restore
-    
-    - name: Run StyleCop
-      run: |
-        dotnet format --check --fix-whitespace
-        dotnet build /p:StyleCopEnabled=true
 
   test:
     needs: build

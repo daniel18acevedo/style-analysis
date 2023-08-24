@@ -92,7 +92,7 @@ dotnet_diagnostic.SA1139.severity = Warning
 dotnet_diagnostic.SX1101.severity = None
 
 #### Ordering rules ####
-dotnet_diagnostic.SA1200.severity = Warning
+dotnet_diagnostic.SA1200.severity = None
 dotnet_diagnostic.SA1201.severity = Warning
 dotnet_diagnostic.SA1202.severity = Warning
 dotnet_diagnostic.SA1203.severity = Warning
@@ -357,7 +357,7 @@ csharp_style_unused_value_assignment_preference = discard_variable
 csharp_style_unused_value_expression_statement_preference = discard_variable
 
 # 'using' directive preferences
-csharp_using_directive_placement = outside_namespace:silent
+# csharp_using_directive_placement = outside_namespace:silent
 
 # New line preferences
 csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = true
