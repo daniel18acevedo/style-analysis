@@ -6,7 +6,10 @@ namespace StyleAnalysis.Test
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(1, 1);
+            var math = new MyMath();
+            var a = math.Divid(1, 1);
+
+            Assert.AreEqual(1, a);
         }
     }
 }
