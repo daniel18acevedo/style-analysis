@@ -1,1 +1,1 @@
-[![build-test](https://github.com/daniel18acevedo/style-analysis/actions/workflows/Style%20Analysis.yml/badge.svg)](https://github.com/daniel18acevedo/style-analysis/actions/workflows/Style%20Analysis.yml)
+[![build](https://github.com/daniel18acevedo/style-analysis/actions/workflows/build-test.yml/badge.svg)](https://github.com/daniel18acevedo/style-analysis/actions/workflows/build-test.yml)
