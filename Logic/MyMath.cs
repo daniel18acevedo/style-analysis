@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StyleAnalysis
+namespace Logic
 {
-    public class Math
+    public class MyMath
     {
         public int Divid(int a, int b)
         {

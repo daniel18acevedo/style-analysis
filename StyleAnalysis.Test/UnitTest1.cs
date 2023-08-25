@@ -1,3 +1,5 @@
+using Logic;
+
 namespace StyleAnalysis.Test
 {
     [TestClass]
