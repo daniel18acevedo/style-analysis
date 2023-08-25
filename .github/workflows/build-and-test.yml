@@ -25,15 +25,9 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
-
-    - name: Install dependencies
-      run: dotnet restore
       
     - name: Build
       run: dotnet build --configuration Release --no-restore
-
-    - name: Test
-      run: dotnet test --configuration Release --no-restore
 
   test:
     needs: build
@@ -68,7 +62,7 @@ jobs:
         hide_complexity: true
         indicators: true
         output: both
-        thresholds: '60 80'
+        thresholds: '80 90'
 
     - name: Add Coverage PR Comment
       uses: marocchino/sticky-pull-request-comment@v2
