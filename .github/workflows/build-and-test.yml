@@ -13,14 +13,13 @@ env:
 
 jobs:
   build:
-    name: build-${{matrix.os}}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+    name: Build
+    runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
     - uses: actions/checkout@v3
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
@@ -33,23 +32,21 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
   test:
+    name: Test
     needs: build
     runs-on: ubuntu-latest
-    name: Test
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Setup .NET
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Install dependencies
       run: dotnet restore
-
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
 
     - name: Test
       run: dotnet test --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
